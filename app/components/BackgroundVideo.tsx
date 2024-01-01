@@ -1,6 +1,10 @@
 import React from "react";
 
-const BackgroundVideo = () => {
+interface Props {
+  source: string;
+}
+
+const BackgroundVideo = ({ source }: Props) => {
   return (
     <>
       <video
@@ -11,10 +15,7 @@ const BackgroundVideo = () => {
         id="backgroundVideo"
         className="fixed bottom-0 right-0 min-w-full min-h-full -z-20 object-cover"
       >
-        <source
-          src="videos/MarcoKouyate_Website_Background.mp4"
-          type="video/mp4"
-        />
+        <source src={source} type="video/mp4" />
       </video>
     </>
   );

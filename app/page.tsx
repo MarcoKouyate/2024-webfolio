@@ -6,8 +6,8 @@ import MainCard from "./components/MainCard";
 export default function Home() {
   return (
     <>
-      <BackgroundVideo />
-      <TransparentBackgroundGradient />
+      <BackgroundVideo source="videos/MarcoKouyate_Website_Background.mp4" />
+      <TransparentBackgroundGradient gradient_color="gray-900" />
       <TypingMachineText />
       <MainCard />
     </>
