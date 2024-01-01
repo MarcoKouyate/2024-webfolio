@@ -1,7 +1,7 @@
-import BackgroundVideo from "./BackgroundVideo";
-import TransparentBackgroundGradient from "./TransparentBackgroundGradient";
-import TypingMachineText from "./TypingMachineText";
-import MainCard from "./MainCard";
+import BackgroundVideo from "./components/BackgroundVideo";
+import TransparentBackgroundGradient from "./components/TransparentBackgroundGradient";
+import TypingMachineText from "./components/TypingMachineText";
+import MainCard from "./components/MainCard";
 
 export default function Home() {
   return (
