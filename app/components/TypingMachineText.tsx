@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 const TypingMachineText = () => {
   return (
     <main>
-      <p className="text-white m-20 font-bold text-2xl">
+      <p className="text-white m-20 font-bold text-2xl bottom-0 fixed">
         <span className="text-cyan-500"> {">_"}</span> Hi, I am
         <span className="typewrite text-cyan-500">
           <Typewriter
@@ -15,7 +15,7 @@ const TypingMachineText = () => {
               " a VR enthusiast.",
               " a creative engineer.",
             ]}
-            typeSpeed={60}
+            typeSpeed={120}
             cursor={true}
             loop={0}
           />

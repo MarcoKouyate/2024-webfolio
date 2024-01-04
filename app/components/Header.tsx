@@ -6,7 +6,9 @@ interface Props {
 
 const Header = ({ children }: Props) => {
   return (
-    <div className="text-center text-5xl text-white mt-10">{children}</div>
+    <div className="text-center text-5xl font-bold text-white mt-10">
+      {children}
+    </div>
   );
 };
 

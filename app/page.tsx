@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <BackgroundVideo source="videos/MarcoKouyate_Website_Background.mp4" />
-      <TransparentBackgroundGradient gradient_color="gray-900" />
+      <TransparentBackgroundGradient gradient_color="red-900" />
       <MainCard />
       <TypingMachineText />
     </>
