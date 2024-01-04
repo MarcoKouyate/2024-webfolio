@@ -5,7 +5,7 @@ import HorizontalButtons from "./HorizontalButtons";
 const MainCard = () => {
   return (
     <>
-      <Header></Header>
+      <Header>Marco Kouyaté</Header>
       <HorizontalButtons />
     </>
   );

@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <BackgroundVideo source="videos/MarcoKouyate_Website_Background.mp4" />
       <TransparentBackgroundGradient gradient_color="gray-900" />
-      <TypingMachineText />
       <MainCard />
+      <TypingMachineText />
     </>
   );
 }
