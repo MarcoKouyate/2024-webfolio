@@ -26,7 +26,7 @@ const Scene_3D = () => {
       </group>
 
       <Environment />
-      <OrbitControls />
+      <OrbitControls enablePan={false} enableZoom={false} />
     </>
   );
 };
