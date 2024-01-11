@@ -1,12 +1,12 @@
 import React from "react";
-import { Sky } from "@react-three/drei";
+import CustomSky from "./CustomSky";
 
 const Environment = () => {
   return (
     <>
       <ambientLight intensity={0.5} />
       <directionalLight color={"white"} position={[0, 0, 5]} />
-      <Sky />
+      <CustomSky />
     </>
   );
 };
