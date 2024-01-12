@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 import MemoHead from "./MemoHead";
 import Environment from "./Environment";
 import { Plane } from "./Plane";
+import CustomCamera from "./CustomCamera";
 
 const Scene_3D = () => {
   const [planeRotation, setPlaneRotation] = useState(0);
@@ -26,7 +26,8 @@ const Scene_3D = () => {
       </group>
 
       <Environment />
-      <OrbitControls enablePan={false} enableZoom={false} />
+
+      <CustomCamera />
     </>
   );
 };
