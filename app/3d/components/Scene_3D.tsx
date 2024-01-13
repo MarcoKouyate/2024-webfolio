@@ -27,7 +27,7 @@ const Scene_3D = () => {
 
       <Environment />
 
-      <CustomCamera />
+      <CustomCamera face="forward" />
     </>
   );
 };

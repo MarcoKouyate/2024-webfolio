@@ -9,7 +9,6 @@ const custom_controls = (
   isDragging: boolean,
   angles: number[]
 ) => {
-  console.log(controls.current);
   if (controls.current && !isDragging) {
     const [x, y] = angles;
     controls.current.setAzimuthalAngle(x);
@@ -17,11 +16,29 @@ const custom_controls = (
   }
 };
 
-const CustomCamera = () => {
+interface Props {
+  face: string;
+}
+
+const CustomCamera = ({ face }: Props) => {
   const controls = useRef<OrbitControlsImpl>(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [angles, setAngles] = useState([0, Math.PI / 2]);
-  useFrame((state, delta) => custom_controls(controls, isDragging, angles));
+
+  interface KeySignature {
+    [key: string]: number[];
+  }
+
+  const orbit_positions: KeySignature = {
+    forward: [0, Math.PI / 2],
+    above: [0, 0],
+    below: [0, Math.PI],
+    back: [Math.PI, Math.PI / 2],
+    left: [Math.PI / 2, Math.PI / 2],
+    right: [-(Math.PI / 2), Math.PI / 2],
+  };
+
+  const [angles, setAngles] = useState(orbit_positions[face]);
+  useFrame(() => custom_controls(controls, isDragging, angles));
 
   return (
     <OrbitControls
