@@ -9,6 +9,7 @@ const HorizontalButtons = () => {
       <Button link="https://marcokouyate.notion.site/e15976482eea44d9a419cde7c7b0d0c6">
         Portfolio
       </Button>
+      <Button link="/3d">3D App</Button>
     </div>
   );
 };

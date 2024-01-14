@@ -10,7 +10,7 @@ const Scene_3D = () => {
   const [planeRotation, setPlaneRotation] = useState(0);
 
   useFrame(() => {
-    setPlaneRotation(planeRotation + 0.01);
+    setPlaneRotation(planeRotation + 0.02);
   });
 
   return (
