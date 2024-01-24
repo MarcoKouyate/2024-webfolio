@@ -1,7 +1,7 @@
 "use client";
 
-import Popup from "./components/Popup";
 import Canvas_3D from "./components/Canvas_3D";
+import Popup from "./components/Popup";
 
 const App_3D = () => {
   return (

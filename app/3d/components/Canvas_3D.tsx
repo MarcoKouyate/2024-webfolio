@@ -2,7 +2,8 @@ import React from "react";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "./Loader";
-import Scene_3D from "./Scene_3D";
+
+import TheatreComponent from "./TheatreComponent";
 
 const Canvas_3D = () => {
   return (
@@ -12,7 +13,7 @@ const Canvas_3D = () => {
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <Scene_3D />
+          <TheatreComponent />
         </Suspense>
       </Canvas>
     </>
